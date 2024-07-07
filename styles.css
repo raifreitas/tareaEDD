@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    font-size: 1em;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 0.5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.auth-button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 0.5em;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.bottom-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.bottom-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+.bottom-nav ul li a img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.bottom-nav ul li a.active img {
+    filter: grayscale(0%);
+}
+
+.carousel {
+    height: 400px; /* Ajusta este valor según sea necesario */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: contain;
+}
+
