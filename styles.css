@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -95,6 +96,64 @@ body {
     background-color: #0056b3;
 }
 
+.carousel {
+    height: 400px; /* Ajusta este valor según sea necesario */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Contenedor a pantalla completa */
+.full-screen-container {
+    height: calc(100vh - 400px); /* Ajuste para mantener la barra inferior visible */
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 40%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+}
+
+.category p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Barra de navegación inferior */
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -139,16 +198,37 @@ body {
     filter: grayscale(0%);
 }
 
-.carousel {
-    height: 400px; /* Ajusta este valor según sea necesario */
-}
+/* Respuesta Responsiva */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.carousel-inner {
-    height: 100%;
-}
+    .search-bar {
+        margin-top: 1em;
+    }
 
-.carousel-inner .carousel-item img {
-    height: 100%;
-    object-fit: contain;
-}
+    .cart-icon {
+        margin-top: 1em;
+    }
 
+    .auth-buttons {
+        margin-top: 1em;
+    }
+
+    .full-screen-container {
+        padding: 1em;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        flex: 1 0 80%;
+        max-width: 100%;
+    }
+}
